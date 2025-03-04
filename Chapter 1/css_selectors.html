@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        div {
+            background-color: antiquewhite;
+            /* This is to provide bg color */
+        }
+
+        p {
+            color: brown;
+        }
+        #red , h3{
+            color: rgb(241, 238, 245);
+            background-color: rgb(252, 103, 66);
+        }
+        /*      # - to access id           */
+        /*      . to access class          */
+        .blue{
+            background-color: #fdfffd;
+            color: #45923e;
+            border: 2px solid black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>This is my CSS selector page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi obcaecati quidem placeat cumque
+        veritatis ducimus? Sapiente, aliquam. Doloribus enim expedita molestias architecto praesentium, voluptatum
+        eum eligendi non corrupti incidunt.</p>
+        <h1>This is another heading</h1>
+        <!-- if we have multiple h1, then all of them will become red -->
+        <div id="red">
+            This is a new div
+        </div>
+        <span class="blue">first tag</span> <br>
+        <span class="blue">second tag</span> <br>
+        <span class="blue">third tag</span> <br>
+        <h3>This is h3</h3>
+    </div>
+</body>
+</html>
+
+<!-- 'element.class' can be used to access one element of a class. Eg- p.red {} will style all the para of class red.
+similarly 'element#id' can be used to access ids -->
+
+<!--      * takes all elements
+          inline styles get priority -->
+
+<!-- comment in css- /* abcde */ -->
