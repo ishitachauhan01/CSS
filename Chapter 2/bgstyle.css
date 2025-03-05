@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 400px;
+    height: 1225px;
+    /* background: #ab80dd; */
+    color: #e3dfe7; 
+    background-image: url('cat1.jpeg');
+    /* background-repeat: no-repeat; */
+    background-size: 213px 120px;
+    border:2px solid yellow ;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: red url('cat1.jpeg') repeat-x fixed top right; */
+}
+
+
+
+/* background-repeat : no-repeat, repeat-x, repeat-y, round, space */
+/* background-size : cover(fills the area), contain(maintains the ratio and shows the entire img) */
+/* background shorthand : SYNTAX= background : color url('img.png/jpg/jpeg') repeat attachment position ; */
