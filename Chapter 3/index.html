@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            height: 323px;
+            width: 345px;
+            background: rgb(197, 116, 116);
+            color: rgb(100, 41, 41);
+            /* margin: 4px 2px 6px 1px; */
+            /* (top - right - bottom - left) clockwise rotation*/
+            margin: 7px 3px;
+            /* top/bottom - 7px and right/left - 3px */
+            padding: 13px;
+            border: 3px solid rgb(51, 15, 15);
+            border-radius: 10px; /* for rounded edge */ 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque tempore quod illo! Est
+        veniam sint reprehenderit ab pariatur at, ad asperiores fuga aut, natus qui nobis? Accusamus, nobis repellat!
+    </div>
+</body>
+
+</html>
+
+<!-- [ CONTENT -> PADDING -> BORDER -> MARGIN ]  -->
+<!-- border : width style color -->
+<!-- we can assign multiple styles= border-style: dashed groove none dotted -->
