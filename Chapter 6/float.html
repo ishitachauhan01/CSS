@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .box1{
+            height: 234px;
+            width: 345px;
+            background-color: rgb(114, 114, 197);
+            float: left;
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: rgb(252, 125, 125);
+            float: right;
+            /*clear: right; nothing can be present on the right of box2*/
+            clear: both;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">BOX 1</div>
+    <div class="box2">BOX 2</div>
+</body>
+</html>
