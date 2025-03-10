@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            flex-direction: row;
+            flex-wrap: wrap;/* will wrap the content of the screen when the size of the screen is reduced */
+            justify-content: flex-start; /*brings the content in centre*/
+            background-color: rgb(206, 206, 195);
+            height: 100vh;
+            align-items: center;
+            align-content: center;
+        }
+        .box1 {
+            height: 234px;
+            /* width: 345px; */
+            background-color: rgb(114, 114, 197);
+            border: 1px solid black;
+            order: 1; /*order for the rest boxes is 0(default) hence are placed before box1*/
+            /* align-self: flex-end;this property works on only one item, and also overwrites the default property set for container */
+            flex-grow: 2;
+        }
+        
+        .box2 {
+            height: 234px;
+            /* width: 345px; */
+            background-color: rgb(252, 125, 125);
+            border: 1px solid black;
+            flex-grow: 1;
+            /* similarly we have flex-shrink  */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">BOX 1</div>
+        <div class="box2">BOX 2-A</div>
+        <div class="box2">BOX 2-B</div>
+        <div class="box2">BOX 2-C</div>
+    </div>
+</body>
+
+</html>
