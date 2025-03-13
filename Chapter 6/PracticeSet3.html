@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            /* padding: 0; */
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            background-color: black;
+            color: white;
+            padding: 20px;
+
+        }
+
+        li {
+            list-style-position: inside;
+            display: inline;
+        }
+
+        .img {
+            align-self: center;
+            position: absolute;
+            left: 14px;
+        }
+
+        .head {
+            padding: 20px;
+        }
+
+        .bg {
+            width: 100vw;
+            height: 282px;
+            background-image: url('cat3.jpeg');
+            border: 2px solid black;
+            background-repeat: repeat;
+            background-position: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 185px;
+            background-color: rgb(206, 203, 173);
+        }
+
+        .left {
+            /* float: left; */
+            height: 45vh;
+            width: 18vw;
+            background-color: rgb(61, 61, 112);
+            color: white;
+            text-align: center;
+            font-size: 17px;
+            padding: 20px;
+        }
+
+        .mid {
+            height: 45vh;
+            width: 18vw;
+            background-color: rgb(158, 135, 4);
+            color: white;
+            text-align: center;
+            font-size: 17px;
+            padding: 20px;
+        }
+
+        .right {
+            /* float: right; */
+            height: 45vh;
+            width: 18vw;
+            background-color: rgb(90, 40, 40);
+            color: white;
+            text-align: center;
+            font-size: 17px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="smile.png" width="30" height="30" class="img">
+        <nav>
+            <ul>
+                <li class="head">Home</li>
+                <li class="head">About</li>
+                <li class="head">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bg"></div>
+    <div class="container">
+        <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo porro nemo placeat animi
+            dolores, ut rerum expedita ab dignissimos tempore totam.</div>
+        <div class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illum amet quibusdam.
+            Vitae fuga ratione, quibusdam id, facilis culpa amet hic iste ab corporis sunt nesciunt, nostrum mollitia
+            impedit.</div>
+        <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias distinctio, amet
+            accusantium commodi, dolorum est voluptatibus ipsam soluta ipsa reprehenderit vero consectetur atque quidem?
+            Quia ab quam nesciunt voluptas incidunt velit itaque suscipit maiores rem labore, omnis repellendus qui?
+        </div>
+    </div>
+</body>
+
+</html>
