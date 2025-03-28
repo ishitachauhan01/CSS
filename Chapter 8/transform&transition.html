@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: rgb(218, 130, 130);
+            height: 600px;
+        }
+        .box{
+            border: 2px solid rgb(77, 26, 26);
+            /* transform:translate(34px, 126px) rotate(0.5turn); */
+            /* translate- pushes box 34px towards right horizontally and 126px down vertically 
+            rotate- rotates by 0.5 turn  2D*/
+
+            /* transform: rotate(45deg); rotates from centre */
+            transform-origin: 0; /* rotates from the start */
+
+            /* transform: scale(1,2); x-2, y-3 */
+            transform: skew(4deg, 6deg); /*for rotating at an angle*/
+            /* transform: matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() ); */
+            
+        }
+
+        .box2{
+            border: 2px solid rgb(77, 26, 26);
+            transform-origin: 0;
+            display: inline-block;
+            transform: translate(40px, 50px);
+            /* transform: skew(4deg, 6deg); */
+            /* transform: rotateX(45deg)  rotates along x-axis  3D */
+        }
+
+        img{
+            /* transition-property: width height;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s; */
+            transition: width 3s ease-in-out 2s, height 4s ease-in 2s;
+        }
+
+        /* img:hover{
+            width: 56px;
+            height: 35px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates magni dignissimos molestiae earum enim maiores, excepturi temporibus? Vel maiores unde, animi deleniti dolore nemo?</div>
+        <div class="box2">
+            <img id="myImage" src="https://images.unsplash.com/photo-1615232934320-87b37b0ff5ab?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="240" height="150">
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width = "240px";
+    btn.addEventListener("click",()=>{
+        if( myImage.style.width === "240px"){
+            myImage.style.width = "384px";
+            myImage.style.height = "240px";
+        }
+
+        else if(myImage.style.width === "384px"){
+            myImage.style.width = "240px";
+            myImage.style.height = "150px";
+        }
+    
+       
+    })
+</script>
+</html>
+
+<!-- transition: property(width/height) duration timing-function delay  -->
